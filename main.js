@@ -1,4 +1,5 @@
-
+uncompletedTod = [];
+completedTodo = [];
 
 window.addEventListener('load', ()=>{
     let form_container = document.querySelector('#create-new-todo');
