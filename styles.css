@@ -62,4 +62,9 @@
     background-color: green;
     border: none;
     margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#btnclose, #btnsubmit{
+    cursor: pointer;
 }
