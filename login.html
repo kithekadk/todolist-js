@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main">
+        <div class="title">
+            <h2>TODO LIST APP</h2>
+        </div>
+        <div style="display: flex; justify-content: space-around;">
+            <a href="index.html" data-cy="homeurl">Home</a>
+        </div>
+    </div>
+
+    <div id="login-container" style="display:block;">
+        <form action="" id="login-form">
+            <h1>Input New Task</h1>
+            <div class="inputs">
+                <label for="">Email:</label><br>
+                <input type="email" name="taskname" id="txttaskname" placeholder="Input your email">
+            </div>
+            <div class="inputs">
+                <label for="">Password:</label><br>
+                <input type="password" name="taskdesc" id="txttaskdesc" placeholder="*******">
+            </div>
+
+            <div class="inputs">
+                <input type="submit" value="Submit" id="btnsubmit">
+                <button type="button" id="btnclose">Cancel</button>
+                <select name="" id="select-action">
+                    <option value="submit">Login</option>
+                    <option value="cancel">Reset</option>
+                </select>
+            </div>
+        </form>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

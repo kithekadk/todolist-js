@@ -26,7 +26,7 @@
     justify-content: center;
 }
 
-#new-todo-form{
+#new-todo-form, #login-form{
     width: 30vw;
     padding: 20px;
     display: flex;
@@ -34,7 +34,7 @@
     align-items: center;
     box-shadow: 3px 3px 3px 3px rgb(227, 226, 226);
 }
-.inputs input[type="text"], .inputs input[type="date"]{
+.inputs input[type="text"], .inputs input[type="date"],  .inputs input[type="email"],  .inputs input[type="password"]{
     padding:5px;
     width:26vw;
     margin-bottom: 10px;
@@ -60,7 +60,7 @@
     position: relative;
 }
 
-#create-new-todo{
+#create-new-todo, #login-container{
     position: absolute;
     top:30%;
     left:35vw;

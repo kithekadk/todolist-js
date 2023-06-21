@@ -1,10 +1,12 @@
 uncompletedTodos = [];
 completedTodos = [];
 
+if(window.location.pathname == '/index.html'){
 window.addEventListener('load', ()=>{
     let form_container = document.querySelector('#create-new-todo');
     let togglebutton = document.querySelector('#btn-create-todo');
     let btnclose = document.querySelector('#btnclose');
+    let btnsubmit = document.querySelector('#btnsubmit');
     let createtodoform = document.querySelector('#new-todo-form');
     let taskname = document.querySelector('#txttaskname');
     let description = document.querySelector('#txttaskdesc');
@@ -29,6 +31,8 @@ window.addEventListener('load', ()=>{
 
         // console.log(taskname.value && description.value && deadline.value);
         if(inputs){
+            btnsubmit.value = 'Sending...'
+            btnsubmit.setAttribute('disabled', '');
             uncompletedTodos.push({
                 title: taskname.value,
                 description: description.value,
@@ -41,6 +45,7 @@ window.addEventListener('load', ()=>{
             taskname.value = ''
             description.value = ''
             deadline.value = ''
+            // btnsubmit.value ='Submit';
         }
     })
     
@@ -78,4 +83,5 @@ function renderPending(){
         let pendingTasks = document.querySelector('.pendingTasklist')
         pendingTasks.appendChild(taskItem)
     })
+}
 }
