@@ -23,3 +23,17 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('createTask', ()=>{
+    cy.get('#btnsubmit').click();
+})
+
+Cypress.Commands.addQuery('getElByID', (id)=>{
+    let getFunction = cy.now('get', `[data-cy="${id}"]`);
+
+    return ()=>{
+        // let element = getFunction();
+        // return element;
+       return getFunction();
+    }
+})

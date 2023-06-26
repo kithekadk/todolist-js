@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Locate</title>
+</head>
+<body>
+    <div class="header" id="navbar">
+        <!-- A FUNCTION IN MAIN.JS FILE is used to insert the header here -->
+    </div>
+    <div class="flex w-[100vw] flex-col items-center">
+        <a href="index.html" data-cy="homeUrl">Home</a>
+        <h1 class="font-bold text-[30px]">Our Location</h1>
+
+        <div>
+            <form action="" class="bg-black px-16 py-8 rounded">
+                <label for="" class="text-white">Your Email</label><br>
+                <input type="text" name="email" id="user-email" placeholder="xyz@gmail.com" class="border p-2 bg-[lightgray] w-[30vw] mt-2 rounded">
+                <div class="form-footer mt-2 text-white">
+                    <input type="button" value="Get Location" data-cy="get-loc-btn" class="getLocbtn bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 border border-blue-700 rounded cursor-pointer">
+                </div>
+
+                <p id="userlocation" class="text-white"></p>
+                <p id="errormsg"></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="location.js"></script>
+
+</body>
+</html>

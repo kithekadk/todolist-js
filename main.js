@@ -30,6 +30,7 @@ window.addEventListener('load', ()=>{
         let inputs = taskname.value && description.value && deadline.value;
 
         // console.log(taskname.value && description.value && deadline.value);
+        btnsubmit.value = 'Sending...'
         if(inputs){
             btnsubmit.value = 'Sending...'
             btnsubmit.setAttribute('disabled', '');
